@@ -5,8 +5,8 @@ class WriteConfigs:
 
     def __init__(
             self,
-            primary_keys=[],
-            source_dict={},
+            primary_keys=None,
+            source_dict=None,
             file_name="configs.py"
     ):
         self.file_name = file_name

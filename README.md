@@ -1,4 +1,4 @@
-# [Dynamic_Assignment] 
+# Dynamic_Assignment
 
 Currently contains one class: write_configs and a demo usage in dynamic_assignment.py.
 The class accepts as contructor params:
