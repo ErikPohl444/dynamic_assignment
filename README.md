@@ -1,6 +1,25 @@
-# [Application name] 
+# [Dynamic_Assignment] 
 
-Provide a description of application
+Currently contains one class: write_configs and a demo usage in dynamic_assignment.py.
+The class accepts as contructor params:
+- A file name for a Python module containing variables to be imported
+- A dictionary from which to get variables and values
+- A list of keys which must be in the dictionary or else the dictionary is incomplete
+
+What the class does is:
+- Confirms all of the keys are in the dictionary
+- Produces an error if not
+- If all the keys are in the dictionary, creates an updated Python module assigning values to variable names based on the keys
+
+What you do:
+- Call the class object with good parameters
+- Add some cruft-looking code:
+```
+import configs
+importlib.reload(configs)
+from configs import t1_xf, t2_xf, t3_xf, t4_xf
+```
+- Import your variables with the values from the dictionary (see above)
 
 ## Future plans
 
