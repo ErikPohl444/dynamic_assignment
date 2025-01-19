@@ -25,4 +25,7 @@ class WriteConfigs:
                     cheat_handle.write(val)
         # find correct pycache
         path = os.getcwd() + r"\__pycache__"
-        os.remove(path + r'\configs.cpython-312.pyc')
+        try:
+            os.remove(path + r'\configs.cpython-312.pyc')
+        except FileNotFoundError:
+            pass
