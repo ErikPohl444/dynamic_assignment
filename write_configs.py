@@ -25,10 +25,10 @@ class WriteConfigs:
                     val = f"{pk}_xf = \"{self.source_dict[pk]}\"\n"
                     cheat_handle.write(val)
         # remove pycache
-        module_dir = sys.path[0]
-        path = os.path.join(module_dir, "__pycache__")
+        path = os.path.join(sys.path[0], "__pycache__")
         pycache_file_name = [x for x in os.listdir(path) if file_name.split('.')[0] in x][0]
+        file_path = os.path.join(path, pycache_file_name)
         try:
-            os.remove(path + rf'\{pycache_file_name}')
+            os.remove(file_path)
         except FileNotFoundError:
             pass
