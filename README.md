@@ -1,7 +1,7 @@
 # Dynamic_Assignment
 
 > [!WARNING]
-> This code attempts to find and delete a pycache file for a shared state module.
+> This code attempts to find and delete a pycache file for a shared state module it created.
 > This is the "secret sauce" which allows repeated different "import froms" the same module.
 > If you don't like this behavior, turn away!  
 
