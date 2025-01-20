@@ -1,5 +1,11 @@
 # Dynamic_Assignment
 
+> [!WARNING]
+> This code attempts to find and delete a pycache file for a shared state module.
+> This is the "secret sauce" which allows repeated different "import froms" the same module.
+> If you don't like this behavior, turn away!  
+
+
 Currently contains one class: write_configs and a demo usage in dynamic_assignment.py.
 The class accepts as contructor params:
 - A file name for a Python module containing variables to be imported
