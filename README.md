@@ -18,7 +18,7 @@ Use case:
 - But wait-- there's more.
 - You only want to do this if all of the keys are present!
 - So first it checks to make sure all of the keys->variables keys are present.
-  - No? It provides an exception with all of the missing keys.
+  - No? It provides an exception with all of the missing keys, not one at a time.  
   - Yes? It allows you to import the variables into your code from a shared state file it made on the fly.
    
 Currently contains one class: write_configs and a demo usage in dynamic_assignment.py.
