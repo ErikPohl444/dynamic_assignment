@@ -3,6 +3,7 @@
 
 ```python
     for n in range(5):
+        logging.info("Set up the dict mapping variable names to values")
         t_dict = {}
         t_dict["t1"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t2"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
@@ -10,23 +11,26 @@
         t_dict["t4"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         print(t_dict)
 ```
-{'t1': 'FD7XG', 't2': 'TYJKS', 't3': 'LLHRX', 't4': 'ULF6B'}
+{'t1': 'RG8NB', 't2': '6K1F9', 't3': 'EH141', 't4': 'ENFQP'}
 
 ```python
+        logging.info("call the configs shared state file generator")
         WriteConfigs(
             file_name=r"configs.py",
             source_dict=t_dict,
             primary_keys=["t1", "t2", "t3", "t4"]
         WriteConfigs(
+        logging.info("import the newly created configs and the variables you created")
         import configs
         importlib.reload(configs)
         from configs import t1_xf, t2_xf, t3_xf, t4_xf
         print(f"here {t1_xf},{t2_xf},{t3_xf},{t4_xf}")
 ```
-here FD7XG,TYJKS,LLHRX,ULF6B
+here RG8NB,6K1F9,EH141,ENFQP
 
 ```python
     for n in range(5):
+        logging.info("Set up the dict mapping variable names to values")
         t_dict = {}
         t_dict["t1"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t2"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
@@ -34,23 +38,26 @@ here FD7XG,TYJKS,LLHRX,ULF6B
         t_dict["t4"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         print(t_dict)
 ```
-{'t1': 'YQR21', 't2': 'XTGG3', 't3': 'FE03F', 't4': 'ZOVG4'}
+{'t1': 'FU61U', 't2': 'RO3UA', 't3': 'MXJCA', 't4': 'ETGJV'}
 
 ```python
+        logging.info("call the configs shared state file generator")
         WriteConfigs(
             file_name=r"configs.py",
             source_dict=t_dict,
             primary_keys=["t1", "t2", "t3", "t4"]
         WriteConfigs(
+        logging.info("import the newly created configs and the variables you created")
         import configs
         importlib.reload(configs)
         from configs import t1_xf, t2_xf, t3_xf, t4_xf
         print(f"here {t1_xf},{t2_xf},{t3_xf},{t4_xf}")
 ```
-here YQR21,XTGG3,FE03F,ZOVG4
+here FU61U,RO3UA,MXJCA,ETGJV
 
 ```python
     for n in range(5):
+        logging.info("Set up the dict mapping variable names to values")
         t_dict = {}
         t_dict["t1"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t2"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
@@ -58,23 +65,26 @@ here YQR21,XTGG3,FE03F,ZOVG4
         t_dict["t4"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         print(t_dict)
 ```
-{'t1': 'C3V24', 't2': '2SAZJ', 't3': 'DNQH7', 't4': '2FLR7'}
+{'t1': 'ISKVS', 't2': '4CSYR', 't3': '52T6Z', 't4': 'KB8HE'}
 
 ```python
+        logging.info("call the configs shared state file generator")
         WriteConfigs(
             file_name=r"configs.py",
             source_dict=t_dict,
             primary_keys=["t1", "t2", "t3", "t4"]
         WriteConfigs(
+        logging.info("import the newly created configs and the variables you created")
         import configs
         importlib.reload(configs)
         from configs import t1_xf, t2_xf, t3_xf, t4_xf
         print(f"here {t1_xf},{t2_xf},{t3_xf},{t4_xf}")
 ```
-here C3V24,2SAZJ,DNQH7,2FLR7
+here ISKVS,4CSYR,52T6Z,KB8HE
 
 ```python
     for n in range(5):
+        logging.info("Set up the dict mapping variable names to values")
         t_dict = {}
         t_dict["t1"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t2"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
@@ -82,23 +92,26 @@ here C3V24,2SAZJ,DNQH7,2FLR7
         t_dict["t4"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         print(t_dict)
 ```
-{'t1': '9SGN2', 't2': 'BSVZG', 't3': 'HNOUY', 't4': 'HDOX9'}
+{'t1': 'GZJSD', 't2': 'AKLOC', 't3': 'AWHJK', 't4': '2XXN5'}
 
 ```python
+        logging.info("call the configs shared state file generator")
         WriteConfigs(
             file_name=r"configs.py",
             source_dict=t_dict,
             primary_keys=["t1", "t2", "t3", "t4"]
         WriteConfigs(
+        logging.info("import the newly created configs and the variables you created")
         import configs
         importlib.reload(configs)
         from configs import t1_xf, t2_xf, t3_xf, t4_xf
         print(f"here {t1_xf},{t2_xf},{t3_xf},{t4_xf}")
 ```
-here 9SGN2,BSVZG,HNOUY,HDOX9
+here GZJSD,AKLOC,AWHJK,2XXN5
 
 ```python
     for n in range(5):
+        logging.info("Set up the dict mapping variable names to values")
         t_dict = {}
         t_dict["t1"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t2"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
@@ -106,18 +119,20 @@ here 9SGN2,BSVZG,HNOUY,HDOX9
         t_dict["t4"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         print(t_dict)
 ```
-{'t1': 'UQGUD', 't2': 'WS3PN', 't3': 'FW88X', 't4': 'Z4O4F'}
+{'t1': 'GPDQN', 't2': 'HUJMF', 't3': 'VALKV', 't4': 'ACQGR'}
 
 ```python
+        logging.info("call the configs shared state file generator")
         WriteConfigs(
             file_name=r"configs.py",
             source_dict=t_dict,
             primary_keys=["t1", "t2", "t3", "t4"]
         WriteConfigs(
+        logging.info("import the newly created configs and the variables you created")
         import configs
         importlib.reload(configs)
         from configs import t1_xf, t2_xf, t3_xf, t4_xf
         print(f"here {t1_xf},{t2_xf},{t3_xf},{t4_xf}")
 ```
-here UQGUD,WS3PN,FW88X,Z4O4F
+here GPDQN,HUJMF,VALKV,ACQGR
 '''\    for n in range(5):\'''\
