@@ -5,7 +5,22 @@
 > This is the "secret sauce" which allows repeated different "import froms" the same module.
 > If you don't like this behavior, turn away!  
 
+Converts json into variables with values, with some validation!
 
+Use case:
+- Imagine you've got some json.
+- For this example, the json is fairly flat: one level deep.
+- It consists, as json does, of key value pairs.
+- You want to turn at least some of the keys into variables in your code.
+- You want the values for those keys to become the values for the variables.
+- Still with me?
+- You're converting at least some of the key/value pairs in the json into variables in your code.
+- But wait-- there's more.
+- You only want to do this if all of the keys are present!
+- So first it checks to make sure all of the keys->variables keys are present.
+  - No? It provides an exception with all of the missing keys.
+  - Yes? It allows you to import the variables into your code from a shared state file it made on the fly.
+   
 Currently contains one class: write_configs and a demo usage in dynamic_assignment.py.
 The class accepts as contructor params:
 - A file name for a Python module containing variables to be imported
@@ -19,13 +34,16 @@ What the class does is:
 
 What you do:
 - Call the class object with good parameters
-- Add some cruft-looking code:
+- Add some cruft-looking code-- the magic cruft:
 ```
 import configs
 importlib.reload(configs)
 from configs import t1_xf, t2_xf, t3_xf, t4_xf
 ```
 - Import your variables with the values from the dictionary (see above)
+
+> [!IMPORTANT]
+> No more referring to shared values in dicts!  These are first-order variables you've just made using dynamic assignment.
 
 ## Future plans
 
