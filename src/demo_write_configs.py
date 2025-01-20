@@ -11,7 +11,7 @@ if __name__ == "__main__":
         t_dict["t2"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t3"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         t_dict["t4"] = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
-
+        print(t_dict)
         WriteConfigs(
             file_name=r"configs.py",
             source_dict=t_dict,
