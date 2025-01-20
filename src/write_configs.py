@@ -30,10 +30,13 @@ class WriteConfigs:
                     cheat_handle.write(val)
 
         # find pycache
-        path = os.path.join(sys.path[0], "__pycache__")
+        try:
+            path = os.path.join(sys.path[0], "__pycache__")
+        except:
+            exit(1)
         try:
             pycache_file_name = [x for x in os.listdir(path) if file_name.split('.')[0] in x][0]
-        except IndexError:
+        except:
             pass
         else:
             file_path = os.path.join(path, pycache_file_name)
