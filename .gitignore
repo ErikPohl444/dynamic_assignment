@@ -1,3 +1,5 @@
 /.idea
 __pycache__/
 configs.py
+docs/demo_write_configs_test.md
+docs/demo_write_configs_test3.md

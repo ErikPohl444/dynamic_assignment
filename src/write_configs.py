@@ -32,12 +32,13 @@ class WriteConfigs:
         # find pycache
         try:
             path = os.path.join(sys.path[0], "__pycache__")
-        except:
+        except IndexError:
+            print("System path does not have a zero index")
             exit(1)
         try:
             pycache_file_name = [x for x in os.listdir(path) if file_name.split('.')[0] in x][0]
-        except:
-            pass
+        except IndexError:
+            print("can't process pycache file name removal, so results are not going to work as expected")
         else:
             file_path = os.path.join(path, pycache_file_name)
 
