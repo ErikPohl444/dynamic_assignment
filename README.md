@@ -127,18 +127,56 @@ Repo checklist:
 
 If any disclaimer exists, add it here.
 
+Here are recommended entries for your README.md based on your repository's files and configuration:
+
+---
+
 ## Getting Started
 
-Provide non-setup instructions for getting started using the work in the repo.
+Clone the repository to your local machine:
 
-## Prerequisites
-
-This section has overlap with minimum system requirements, requirements.txt, and technologies.
-I consider this anything which needs to be on your machine or available to you before installing and using the work in the repo.
+```bash
+git clone https://github.com/ErikPohl444/dynamic_assignment.git
+cd dynamic_assignment
+```
 
 ## Installing
 
-Provide installation steps here.
+1. (Optional but recommended) Create and activate a virtual environment:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+
+2. Install the project dependencies using pip:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   Or, if you prefer, you can use the `pyproject.toml` to install as a package manager-ready project.
+
+---
+
+## Prerequisites
+
+- Python >= 3.8
+- pip (Python package manager)
+- (Optional) Virtual environment tool such as `venv`
+
+The main dependencies are listed in `requirements.txt` and include:
+- colorama
+- coverage
+- GitPython
+- mypy
+- pytest
+- ruff
+- typing_extensions
+- uv
+...and others.
+
+For more details about these dependencies or advanced setup (such as building from source), consult the [`requirements.txt`](https://github.com/ErikPohl444/dynamic_assignment/blob/main/requirements.txt) or [`pyproject.toml`](https://github.com/ErikPohl444/dynamic_assignment/blob/main/pyproject.toml) files.
 
 ## Running the tests
 
